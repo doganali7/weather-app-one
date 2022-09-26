@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function LocationDetails({ props }) {
-  return <h1>{`${props.city}, ${props.country}`}</h1>;
+export default function LocationDetails(props) {
+  const { city, country } = props;
+  return <h1>{`${city}, ${country}`}</h1>;
 }
 
 LocationDetails.propTypes = {
