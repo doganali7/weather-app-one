@@ -4,9 +4,8 @@ import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 
 function App(props) {
-  // eslint-disable-next-line no-restricted-globals
-  const { city, country } = location;
-  return <LocationDetails city={city} country={country} />;
+  const { location } = props;
+  return <LocationDetails city={location.city} country={location.country} />;
 }
 
 export default App;
